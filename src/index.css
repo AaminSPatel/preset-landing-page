@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#heroBgImage {
+    animation:  1s ease forwards; /* Added 'forwards' to maintain the final state */
+    background-repeat: no-repeat !important;
+    background-position: center;
+     background-size: cover;/* Initial background size */
+    transition: all 1s ease;
+  }
+  
+  @keyframes herobg {
+    0% {
+      background-size: 0% ; /* Start animation at 25% */
+    }99% {
+      background-size: 100% ; /* Start animation at 25% */
+    }
+    100% {
+      background-size:cover !important; /* End animation with cover */
+    }
+  }
+  
+
+  @keyframes herobg1 {
+    0% {
+      background-size: 500% ; /* Start animation at 25% */
+    }99% {
+      background-size: 100%; /* Start animation at 25% */
+    }
+    100% {
+      background-size:cover !important; /* End animation with cover */
+    }
+  }
+  
+  
+ #images1{
+    animation: 1s ease 1 forwards ;
+ }
+@keyframes image1 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+} 
+@keyframes image11 {
+    from{
+        transform: translateX(0%) scale(0) ;
+        width: 0;
+    }
+    to{
+        transform: translateX(0%) scale(1);
+    }
+} 
+ #images2{
+    animation: image2 1s ease 1 forwards ;
+ }
+@keyframes image2 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+} 
+ @keyframes image21 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+} 
+ #images3{
+    animation: image3 1s ease 1 forwards ;
+ }
+@keyframes image3 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}@keyframes image31 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+ #images0{
+    animation: image0 0.3s linear 1 forwards ;
+    transition: all 0.3s linear;
+    transform: translate(200px);
+ }
+@keyframes image0 {
+    from{
+        transform: scale(1) translate(200px, 0);
+        opacity: 1;
+        width: 200px;
+    }
+    to{
+        transform: scale(0.2) translate(200px, 0%);
+        opacity: 0;
+    }
+}
